@@ -101,7 +101,6 @@ tf.compat.v1.reset_default_graph()
 # Building neural network
 net = tflearn.input_data(shape=[None, len(train_x[0])])
 net = tflearn.fully_connected(net, 10)
-net = tflearn.fully_connected(net, 10)
 net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
 net = tflearn.regression(net)
 
